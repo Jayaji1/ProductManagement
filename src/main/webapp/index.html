@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Product Management System</title>
+
+<style>
+     
+   body {
+   font-family:Arial;
+   text-align:center;
+   background: #f2f2f2;
+   }
+   
+   form{
+   background:white;
+   width:350px;
+   padding:20px;
+   margin:20px auto;
+   border:1px solid black;
+   }
+   
+   input{
+   padding:7px;
+   margin:5px;
+   }
+   
+        input[type="submit"] {
+            background: black;
+            color: white;
+            border: none;
+            padding: 8px 20px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+</style>
+</head>
+<body>
+
+  <h2>Product Management System</h2>
+  
+  <form action="product" method="post"> 
+  
+  <input type="text" name="name" placeholder="Enter Name" required>
+  <br>
+  <input type="text" name="category" placeholder="Enter Category" required>
+  <br>
+  <input type="number" name="price" placeholder="Enter Price" required>
+  <br>
+  
+  <input type="submit" value="Add Product">
+  
+  </form>
+  
+   <form action="update" method="post"> 
+   
+   
+  <input type="number" name="id" placeholder="Product Id" required>
+   <br>
+  <input type="text" name="name" placeholder="Product Name" required>
+  <br>
+  <input type="text" name="category" placeholder="Product Category" required>
+  <br>
+  <input type="number" name="price" placeholder="Product Price" required>
+  <br>
+  
+  <input type="submit" value="Update Product">
+  
+  <br>
+  <a href="view">View Products</a>
+  
+  </form>
+</body>
+</html>
